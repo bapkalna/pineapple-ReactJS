@@ -1,38 +1,529 @@
-.App {
-  text-align: center;
+/* Base */
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: 1920px;
+  height: 1080px;
+  background: #ffffff;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  width: 680px;
+  height: 1080px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.image-container {
+  position: absolute;
+  width: 1240px;
+  height: 1080px;
+  left: 680px;
+  top: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Left side styles - text container*/
+
+/*top bar, HeaderComponent*/
+
+.top-bar {
+  display: flex;
+  position: absolute;
+  width: 480px;
+  height: 40px;
+  left: 100px;
+  top: 100px;
+}
+
+.logo-image {
+  position: absolute;
+  width: 25px;
+  height: 40px;
+  right: 455px;
+}
+
+.logo-text {
+  position: absolute;
+  width: 78px;
+  height: 16px;
+  left: 40px;
+  right: 362px;
+  top: 20px;
+  bottom: 4px;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-family: Arial;
+  color: #6a707b;
+  font-size: 16px;
+  font-weight: 400;
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.nav-link-about {
+  position: absolute;
+  width: 42px;
+  height: 26px;
+  left: 231px;
+  right: 207px;
+  top: 14px;
+}
+
+.nav-link-how {
+  position: absolute;
+  width: 91px;
+  height: 26px;
+  left: 303px;
+  right: 86px;
+  top: 14px;
+}
+
+.nav-link-contact {
+  position: absolute;
+  width: 56px;
+  height: 26px;
+  left: 424px;
+  top: 14px;
+  bottom: 0px;
+}
+
+/*Subscription content - headings, input, terms agreement*/
+
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 680px;
+
+  left: 0px;
+  top: 0px;
+}
+
+.heading {
+  position: absolute;
+  width: 399px;
+  height: 44px;
+  left: 140px;
+  top: 374px;
+
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height, or 137% */
+
+  color: #131821;
+}
+
+.subheading {
+  position: absolute;
+  width: 400px;
+  height: 56px;
+  left: 140px;
+  top: 433px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  color: #6a707b;
+}
+
+.email-base {
+  display: flex;
+  position: absolute;
+  width: 663px;
+  height: 70px;
+  left: 100px;
+  top: 539px;
+  z-index: 2;
+
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  box-sizing: border-box;
+  border-left: 4px solid #4066a5;
+}
+
+.email {
+  display: flex;
+  position: absolute;
+  width: 227px;
+  height: 24px;
+  left: 44px;
+  top: 23px;
+  bottom: 23px;
+
+  border: none;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #6a707b;
+}
+
+.arrow {
+  background-color: #ffffff;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 28px;
+  right: 40px;
+  z-index: 3;
+}
+
+.terms {
+  margin-top: 53px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.checkmark {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 140px;
+  top: 663px;
+
+  background: #4066a5;
+  border-radius: 3px;
+}
+
+.terms-text {
+  position: absolute;
+  width: 359px;
+  height: 28px;
+  left: 181px;
+  top: 662px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  color: #6a707b;
+}
+
+.line {
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  left: 140px;
+  top: 740px;
+
+  background: #e3e3e4;
+}
+
+.buttonFacebook {
+  top: 791px;
+  left: 218px;
+}
+
+.buttonInstagram {
+  top: 791px;
+  left: 284px;
+}
+
+.buttonTwitter {
+  top: 791px;
+  left: 350px;
+}
+
+.buttonYoutube {
+  top: 791px;
+  left: 416px;
+}
+
+.buttonStyle {
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid #e3e3e4;
+  width: 46px;
+  height: 46px;
+  background-color: transparent;
+
+}
+
+.icon-style {
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  color: #13182130;
+  size: 18px;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+
+  .text-container {
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    display: flex;
   }
+
+  .image-container {
+    display: none;
+  }
+
+  .image-container-mobile {
+    position: absolute;
+    width: 1119px;
+    height: 746px;
+    left: -281px;
+    top: 66px;
+  
+  }
+
+  .top-bar {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+    display: flex;
+  }
+
+  .logo-image {
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    right: 330px;
+    left: 20px;
+    top: 10px;
+    bottom: 16px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .nav-link-about,
+  .nav-link-contact,
+  .nav-link-how {
+    font-size: 14px;
+  }
+
+  .nav-link-about {
+    position: absolute;
+    width: 37px;
+    height: 24px;
+    left: 149px;
+    right: 189px;
+    top: 21px;
+  }
+
+  .nav-link-how {
+    position: absolute;
+    width: 80px;
+    height: 24px;
+    left: 206px;
+    right: 89px;
+    top: 21px;
+  }
+
+  .nav-link-contact {
+    position: absolute;
+    width: 49px;
+    height: 24px;
+    left: 306px;
+    top: 21px;
+  }
+
+  .subscribe-wrapper {
+    position: absolute;
+    align-items: left;
+    width: 335px;
+    height: 371px;
+    left: 20px;
+    top: 254px;
+
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+    right: 483px;
+    left: 301px;
+    top: 188px;
+    bottom: 187px;
+  }
+
+  .heading {
+    position: absolute;
+    width: 295px;
+    height: 34px;
+    left: 20px;
+    top: 30px;
+
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    /* identical to box height, or 142% */
+
+    color: #131821;
+  }
+
+  .subheading {
+    position: absolute;
+    width: 295px;
+    height: 52px;
+    left: 20px;
+    top: 74px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    /* or 186% */
+
+    color: #6a707b;
+  }
+
+  .email-base {
+    position: absolute;
+    width: 295px;
+    height: 60px;
+    left: 20px;
+    top: 146px;
+
+    background: #ffffff;
+    border: 1px solid #e3e3e4;
+    box-sizing: border-box;
+    border-left: 4px solid #4066a5;
+  }
+
+  .email {
+    position: absolute;
+    width: 227px;
+    height: 24px;
+    left: 19px;
+    top: 18px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    color: #6a707b;
+  }
+
+  .arrow {
+    background-color: #ffffff;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 14px;
+    top: 23px;
+    right: 15px;
+  }
+
+  .terms {
+    margin-top: 20px;
+    width: 254px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  .checkmark {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 20px;
+    top: 227px;
+
+    background: #4066a5;
+    border-radius: 3px;
+  }
+
+  .terms-text {
+    position: absolute;
+    width: 254px;
+    height: 28px;
+    left: 61px;
+    top: 226px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+    color: #6a707b;
+  }
+
+  .line {
+    position: absolute;
+    width: 295px;
+    height: 1px;
+    left: 20px;
+    top: 274px;
+
+    background: #e3e3e4;
+  }
+
+  .buttonFacebook {
+    top: 295px;
+    left: 53px;
+  }
+
+  .buttonInstagram {
+    top: 295px;
+    left: 109px;
+  }
+
+  .buttonTwitter {
+    top: 295px;
+    left: 165px;
+  }
+
+  .buttonYoutube {
+    top: 295px;
+    left: 221px;
+  }
+
+
 }
