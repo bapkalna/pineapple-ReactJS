@@ -164,6 +164,15 @@ body {
   border-left: 4px solid #4066a5;
 }
 
+.email-base:focus {
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+.email-base:hover {
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  border-color: #4066a5;
+}
+
 .email {
   display: flex;
   position: absolute;
@@ -180,9 +189,19 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+
   /* identical to box height, or 150% */
 
   color: #6a707b;
+}
+
+.email:hover {
+  color: #131821;
+}
+
+.email:focus {
+  outline: none;
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
 }
 
 .arrow {
@@ -193,6 +212,10 @@ body {
   top: 28px;
   right: 40px;
   z-index: 3;
+}
+
+.arrow:hover {
+  color: #4066a5;
 }
 
 .terms {
@@ -230,6 +253,19 @@ body {
   color: #6a707b;
 }
 
+a {
+  color: #131821;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #4066a5;
+}
+
+a:active {
+  color: #233759;
+}
+
 .line {
   position: absolute;
   width: 400px;
@@ -245,9 +281,33 @@ body {
   left: 218px;
 }
 
+.buttonFacebook:hover {
+  background: #4267b2;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
+}
+
+.buttonFacebook:active {
+  background: #2f4a80;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
+}
+
 .buttonInstagram {
   top: 791px;
   left: 284px;
+}
+
+.buttonInstagram:hover {
+  background: #c13584;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
+}
+
+.buttonInstagram:active {
+  background: #8f2762;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
 }
 
 .buttonTwitter {
@@ -255,9 +315,33 @@ body {
   left: 350px;
 }
 
+.buttonTwitter:hover {
+  background: #1da1f2;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
+}
+
+.buttonTwitter:active {
+  background: #177fbf;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
+}
+
 .buttonYoutube {
   top: 791px;
   left: 416px;
+}
+
+.buttonYoutube:hover {
+  background: #ff0000;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
+}
+
+.buttonYoutube:active {
+  background: #cc0000;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
 }
 
 .buttonStyle {
@@ -268,19 +352,22 @@ body {
   width: 46px;
   height: 46px;
   background-color: transparent;
-
 }
 
 .icon-style {
   position: absolute;
   width: 8px;
   height: 16px;
-  color: #13182130;
+  color: #b2b5ba;
   size: 18px;
   top: 15px;
   left: 15px;
   bottom: 15px;
   right: 15px;
+}
+
+.icon-style:hover {
+  color: #ffffff !important;
 }
 
 /* MOBILE */
@@ -310,7 +397,6 @@ body {
     height: 746px;
     left: -281px;
     top: 66px;
-  
   }
 
   .top-bar {
@@ -524,6 +610,4 @@ body {
     top: 295px;
     left: 221px;
   }
-
-
 }

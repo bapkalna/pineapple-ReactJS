@@ -1,8 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, FormControl } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Button} from "reactstrap";
 
 class SubscribeComponent extends Component {
+
+  onChange = () => {
+    this.setState({ color: 'green' });
+ }
   render() {
     return (
       <React.Fragment>
@@ -37,6 +41,7 @@ class SubscribeComponent extends Component {
           <div>
             <Button
               className="buttonStyle btn btn-link btn-outline buttonFacebook"
+              onClick={this.onChange}
               href="http://www.facebook.com/"
             >
               <FontAwesomeIcon
