@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "./HeaderComponent";
 import SubscribeComponent from "./SubscribeComponent";
-import { Image } from "reactstrap";
 
 class Home extends Component {
   render() {
